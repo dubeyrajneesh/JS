@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   
+                          //    length of a string
+
+var text1 = "I am a good boy" ;
+console.log(text1.length) ;
+// it will give the length of a string that is 15 in above case
+
+var text2 = "length will give the length of a string" ;
+var ans= text2.length ;
+console.log(ans) ;
+//  It will print 39 that is the length of above string
+
+                       // Slice
+
+/*
+ slice function will contain 2 arguments inside small paranthesis one is starting position and another is ending position but note that end value is not included and counting will start from 0
+*/
+
+var text3 = " I am A good boy" ;
+console.log(text3.slice(3,9)) ;
+//  It will print am a g
+
+// If you omit the end position then it will print whole string from start position mentioned in the parenthesis
+
+var text4= " I am a good boy";
+console.log(text3.slice(3));
+//  It will print am a good boy
+
+// if the value inside the parenthesis is negative then the counting will starts from ending
+
+var text5= " I am a good boy";
+console.log(text5.slice(-3,-8)) ;
+//  it will not print anything
+
+var text6= " I am a good boy";
+console.log(text6.slice(-8,-3)) ;
+//  it will print good
+
+                       // substring
+
+//  it is same as slice only difference between slice and substring is that if the argument of substring is less than 0 then it will treated as a 0
+
+
+var text7= "I am a good boy" ;
+console.log(text7.substring(3,5));
+//  It will print m
+
+                        // substr
+// In case of substr first argument will be starting position and second argument is lenth of a string that should be print
+
+var text8= " I am a good boy" ;
+console.log(text8.substr(3,6)) ;
+//  It will print am a g
+
+                        //   replace
+
+    // It is important ot that reolace function will only replace first match after that it will not replace
+
+var text9= "All cats are dogs and all dogs are cats" ;
+console.log(text9.replace("cats" , "dogs")) ;
+// It will print All dogs are dogs and all dogs are cats
+
+              //replaceAll
+
+// replaceAll function replace all matchs in whole string
+var text10= "All cats are dogs and all dogs are cats" ;
+console.log(text10.replaceAll("cats" , "dogs")) ;
+// It will print All dogs are dogs and all dogs are dogs
+
+                                  //Uppercase function
+
+var text11 = "good work";
+console.log(text11.toUpperCase()) ;
+//  It will print GOOD WORK
+
+                                    // lowerCase function
+
+var text12 = "I AM a Good BOy"
+console.log(text12.toLowerCase()) ;
+// It will print i am a good boy
+
+                                  // indexOf function
+// Index function will give the position of value inside the parenthesis    
+var text13 = " I am a good boy";
+console.log(text13.indexOf('o')) ;
+//  It will give index of first o that is 9 in above case
+
+          //trim function
+
+var text14 = `"   I am a good boy   "`
+console.log(text14.trim()) ;
+
+
+
+   </script>
+</body>
+</html>
