@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in JS</title>
+</head>
+<body>
+    
+    <script>
+
+           // Block Function
+
+    {
+
+        var x= 13 ;
+        console.log(x) ;
+
+    }
+
+    console.log(x) ;
+
+    // In above case x is defined inside as well as outside because of var but in below case y is defined only inside not outside becauswe of let
+
+    {
+        let y= 15;
+        console.log(y) ;
+    }
+
+    // console.log(y) ;
+
+
+                             // functional scope
+
+    function f1()
+    {
+        let p = 20 ;
+        console.log(p) ;
+    }
+
+   // console.log(p) ;
+
+
+
+    </script>
+
+</body>
+</html>
