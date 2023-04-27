@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in Javascript</title>
+</head>
+<body>
+    
+    <script>
+              
+                      // Array in Javascript
+
+  /*
+    If you have large number of similar data and you want tot store it in a single variable then you can store it init an array and the data type of array is object.
+    */
+
+    const marks=[ 12,23,34,45,56,67];
+    console.log(marks) ; 
+    //it will print the whole array in which 12 is at index 0 and 67 is at index 5
+
+    console.log(typeof(marks)) ; 
+    // type of array is object so it will print object
+
+    // only the difference between array and object in javascript is that arrays are numbered index and objects are named indeses but the type of array is an object
+    
+    console.log(marks[0]) ;// it will print the value present at insex 0 that is 12
+    console.log(marks[1]) ;// it will print the value present at insex 1 that is 23
+    console.log(marks[2]) ;// it will print the value present at insex 2 that is 34
+    console.log(marks[3]) ;// it will print the value present at insex 3 that is 45
+    console.log(marks[4]) ;// it will print the value present at insex 4 that is 56
+    console.log(marks[5]) ;// it will print the value present at insex 5 that is 67
+    console.log(marks[6]) ;// it will print the value present at insex 6 that is undefined
+    console.log(marks[7]) ;// it will print the value present at insex 7 that is undefined
+
+    console.log(marks.length) ;
+    //it will return the total number of elements present in the array
+
+    marks[0] = 22;
+    // Now the value will be change t0 22 from 12
+
+    console.log(marks) ;
+    //it will give new array
+
+    marks[1] = 11;
+    marks[4] = 99 ;
+
+              //sorting the array
+
+    console.log(marks.sort()) ;
+    // it will print the array in sorted manner
+
+                       // adding new element to array
+
+    marks.push(1) ;
+    // 1 is added in the last of array
+
+    console.log(marks) ;
+    // it will print the updated array
+
+    const roll = [34,32,45,12,56,78,36] ;
+    console.log(roll) ;
+    // It will print the array as same as written
+
+                //reverse the array
+
+    console.log(roll.reverse()) ;
+    // It will print the array in reverse order
+
+    console.log(roll.find("56")) ;
+    
+    
+
+    </script>
+
+</body>
+</html>
