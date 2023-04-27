@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in html</title>
+</head>
+<body>
+    
+
+      <script>
+
+                       //for loop
+
+    // we have to define 3 condotions in for loop one is initialisation and second is condition and third is updation
+    console.log("********for loop*********") ;
+
+    for(let i=0; i<10; i++)   // initialisation , condition , updation
+    {
+        console.log(i) ;      // body execution it will execute as far as condition is true
+    }
+
+    console.log("*******Array with loops******")
+    // loops with array
+
+    const roll = [12,23,34,45,56,67,78,89,21,32,43,54,65,76,87,98,90] ;  //array with multiple data
+
+    for(let i=0; i< roll.length; i++)      //1. innitialisation , 2. condition , 3. updation
+    {
+        console.log(roll[i]) ;            //body execution
+    }
+
+
+                          // while loop
+            console.log("*******while loop********") ;
+
+    let p= 1;                  //initialisation
+    while(p<10)                // condition
+    {
+        console.log(p) ;       //body execution
+        p++;                   //updation
+    }
+
+
+
+                    //do while loop
+            console.log("********do while loop*******") ;
+    
+            let i=1;                    //initialisation
+            do{
+                console.log(i) ;        //body execution
+                i++;                    //updation
+            }while(i<10) ;              //condition
+
+
+    /*
+    the only difference between while loop and do while loop is that if condition gets failed then while loop will not execute but on the other hand if the condition will get failed then do while loop will execute atleast one times so this is the basic difference between them
+    */
+
+    
+
+    
+      </script>
+</body>
+</html>

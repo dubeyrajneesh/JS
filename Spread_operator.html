@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread_Operator</title>
+</head>
+<body>
+
+    <h2>Spread Operator</h2>
+    <ul>
+        <li>Spread opearot in used for the copy of data of one array into the new array</li>
+    </ul>
+    <script>
+
+        // spread operator is used to join two or more array in a new array
+            
+            const num1 = [12,23,34];
+            const num2 = [45,56,67];
+            const num3 = [78,89,90];
+
+            const newnum = [...num1 , ...num2 , ...num3] ;     
+            console.log(newnum) ; 
+            
+        // it is also used to join two or more object
+
+        const student1 ={
+
+             name: "Rajneesh" ,
+             age: 19
+
+        };
+
+        const student2 = {
+
+            sal: 45000 ,
+            bonus: 2300
+        };
+
+        const newstudent = {...student1 , ...student2};
+        console.log(newstudent) ;
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
