@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 3 Revision</title>
+</head>
+<body>
+    
+     <h2> Section 3 Revision</h2>
+     <script>
+
+    var age = 19;
+    if(age <18)
+    {
+        console.log("Sorry , You are not eligible to vote") ;
+    }
+
+    else if(age ==18)
+    {
+        console.log("Congratulations , You are just eligible to vote") ;
+    }
+
+    else
+    {
+        console.log("Ypu are eligible to vote") ;
+    }
+
+    var student = {
+
+        name: "Rohan",
+        age: 19,
+        Gender: "Male",
+        Roll: 245678,
+        sal: 45000
+    }
+
+    console.log(student) ;
+    console.log(typeof(student)) ;
+
+
+    console.log("******Employee object*********")
+
+    var employee= {
+
+        name: "Rinku",
+        age: 45 ,
+        
+    }
+
+    console.log(employee) ;
+
+
+    console.log("*******Array**********") ;
+
+    const num = [12,23,34,45,56,67,78];
+    console.log(num) ;
+
+
+    num[0] = 10;
+    console.log("****Changing Ist elemnt*****") ;
+    console.log(num) ;
+    console.log("*******Sorting of array*******") ;
+
+    console.log(num.sort()) ;
+
+    console.log("****REversing of array******") ;
+    console.log(num.reverse()) ;
+
+    console.log("******length of array********") ;
+    console.log(num.length) ;
+
+    console.log("******Function in JS*****") ;
+    console.log("***function with no parameter*****") ;
+
+    function f1()
+    {
+        console.log("Good Morning , Sir") ;
+    }
+    f1() ;
+    console.log("***function with 1 parameter*****") ;
+
+    //function with 1 parameter
+    function f2(hrs)
+    {
+              return hrs*60 ;
+    }
+    console.log(f2(5)) ;
+
+    // function with 2 parameter 
+    console.log("***function with 2 parameter*****") ;
+
+    function f3( a , b)
+    {
+        return a* b;
+    }
+    console.log(f3(4,5)) ;
+
+    console.log("***Loop in javascript*****") ;
+    console.log("***for loop*****") ;
+
+    const roll=[21,32,43,54,65,76,87] ;
+
+    for(let i=0 ; i<roll.length; i++)
+    {
+        console.log(roll[i]) ;
+    }
+
+    console.log("***While Loop*****") ;
+    let p=0;
+    while(p<roll.length){
+        console.log(roll[p]) ;
+        p++;
+    }
+
+    console.log("***do while loop*****") ;
+
+    let m=0;
+    do{
+        console.log(roll[m]) ;
+        m++;
+    }while(m<roll.length)
+
+
+    // spread operator
+    console.log("*****Spread Operator******");
+
+    const num1 = [12,23,34];
+    const num2 = [45,56,67];
+
+    const newnum = [...num1,10,20,...num2,30,40,50];
+    console.log(newnum) ;
+
+    //array filter
+    console.log("***array filter*****") ;
+
+    const num3 = [12,16,21,22,15,28];
+    function f3(num3)
+    {
+        return num3>18 ;
+    }
+    const newnum3 = num3.filter(f3) ;
+    console.log(newnum3) ;
+
+
+ 
+     </script>
+
+
+
+</body>
+</html>
