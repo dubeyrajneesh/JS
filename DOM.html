@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document  object model</title>
+</head>
+<body>
+    <div class="container" id="div">
+
+   
+    
+    <header class="head" id="myhead" >
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>More</li>
+
+        </ul>
+    </header>
+        <section class="section" id="mysection">
+            <ol type="i">
+                <li>This is right section</li>
+                <li>This is mid section</li>
+                <li>This is left section</li>
+
+            </ol>
+        </section>
+
+        <section class="section1" id="mysection1">
+            <ol>
+                <li>This is another section</li>
+                <li>This is just for practice</li>
+            </ol>
+        </section>
+
+        <section class="section2" id="mysection2">
+            <ol>
+                <li>This is another section</li>
+                <li>This is just for practice</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis?</li>
+            </ol>
+        </section>
+
+            <navigation class="vav" id="navbar">
+                <p>This is navigation</p>
+            </navigation>
+
+    </div>
+
+    <script>
+
+            // Accesing element by their ID
+
+        let getelement1 = document.getElementById("myhead") ;
+        console.log(getelement1) ;
+        
+        let getelement2 = document.getElementById("mysection") ;
+        console.log(getelement2) ;
+
+        let getelement3 = document.getElementById("navbar") ;
+        console.log(getelement3) ;
+
+                 //adding elements by ID
+                 console.log("*****Adding elemenr******") ;
+
+        document.getElementById("myhead").innerHTML = "Our Services" ;
+        console.log(getelement1) ;
+
+
+            // Accesing element by their class
+
+            let getelement4 = document.getElementsByClassName("section1") ;
+            console.log(getelement4) ;
+
+            let getelement5 = document.getElementsByClassName("section2") ;
+            console.log(getelement5) ;
+
+            // Accesing elements by their tag name
+
+            let getelement6 = document.getElementsByTagName("li") ;
+            console.log(getelement6) ;
+
+            
+
+
+
+
+
+    </script>
+       
+    
+</body>
+</html>
