@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM revision</title>
+</head>
+<body>
+    <div class="container" id="mycontainer">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sit fugit earum.</p>
+    </div>
+    <div class="main" id="mymain">
+        <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>More</li>
+        </ul>
+    </div>
+    <div class="main2" id="mymain2">
+        <h2>This is heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum explicabo odit, eveniet impedit earum hic enim adipisci deleniti? Quia maiores quas ratione architecto laboriosam ducimus aliquam beatae deleniti similique consectetur optio explicabo recusandae perspiciatis eius qui non commodi at illo, eveniet accusamus aspernatur necessitatibus.</p>
+    </div>
+
+    <script>
+
+        let getelement1 = document.getElementById("mycontainer") ;
+        console.log(getelement1) ;
+
+        let getelement2 = document.getElementById("mymain") ;
+        console.log(getelement2) ;
+
+        let getelement3 = document.getElementsByClassName("main2") ;
+        console.log(getelement3);
+
+        document.getElementById("mycontainer").innerHTML = "This is change 1" ;
+        document.getElementById("mymain").innerHTML = "This is change 2" ;
+        document.getElementById("mymain2").innerHTML = "This is change 3" ;
+
+        document.getElementById("mycontainer").innerHTML = "This is new change 1" ;
+        document.getElementsByClassName("main")[0].innerHTML = "This is new change 2" ;
+
+        document.getElementById("mymain2").style.color = "red" ;
+
+
+
+
+
+
+    </script>
+</body>
+</html>
