@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>setTimeout and clearTimeout</h2>
+    <ol>
+        <li>This is list 1</li>       
+        <li>This is list 2</li>
+        <li>This is list 3</li>
+        <li>This is list 4</li>
+        <li>This is list 5</li>
+    </ol>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla veritatis maxime excepturi amet, dolorum accusamus labore vitae nobis voluptas distinctio nihil blanditiis fugiat tenetur inventore fugit accusantium rem cum sint magnam omnis incidunt eius. Ex reiciendis harum autem aperiam illo dolore dignissimos, ipsum quae, incidunt ipsa fuga deleniti quisquam.</p>
+
+    <script>
+
+        function display(name , age)
+        {
+            console.log("Name is " + name + " And age is "+ age) ;
+        }
+
+       /* display("Ram" , 20);
+        display("Shyam", 20);
+        display("Mohan" , 23);
+        */
+       // Above all will display name and age simply without applying any setTimeout property in it
+
+       const time1 = setInterval(display , 2000, "Ram" , 21);
+       console.log(time1) ;
+
+       const time2 = setInterval(display , 3000, "Shyam" , 22);
+       console.log(time2) ;
+
+    //    const time3 = setInterval(display , 8000, "Mohan" , 24);
+    //    console.log(time3) ;
+
+    //    const time4 = setInterval(display , 9000, "Rohan" , 21);
+    //    console.log(time4) ;
+
+    //    const time5 = setInterval(display , 10000, "Mohit" , 22);
+    //    console.log(time5) ;
+
+    //    setInterval(display , 11000, "Sohit" , 24) ;
+
+    //    setInterval(display , 12000, "Puneet" , 25) ;
+
+       
+
+    </script>
+    
+</body>
+</html>
