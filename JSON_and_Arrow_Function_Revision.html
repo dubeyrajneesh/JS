@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON And Arrow Function</title>
+</head>
+<body>
+
+    <h2>JSON In JS</h2>
+    <ol>
+        <li>JSON Stands for Javascript oriented notation</li>
+        <li>JSON is used for exchanging the data over network/Internet</li>
+    </ol>
+
+    <h2>Arrow Function </h2>
+    <ol>
+        <li>Arrow function is the shortcut key for function</li>
+        <li>Arrow function basically shortens the wring of code</li>
+        <li>Its function is same as the function</li>
+    </ol>
+
+    <script>
+
+         let obj1= {
+
+             Name: "Mohan" ,
+             Age: 23,
+             Roll: 23456 ,
+             Adress: {
+                City: "Pratapgarh",
+                State:"UP",
+                Pin: 2345
+
+             },
+             Country:"India"
+
+
+         }
+
+         console.log(obj1) ;
+         // It will simlply print the above object
+
+         let obj2 = JSON.stringify(obj1) ; // The main function of JSON.stringify is to that convert the object into the string. Now obj2 will print the string not the object
+         console.log(obj2) ; // It is now string
+         console.log(obj2.length) ; //It will give the length of string 
+        console.log(obj2.Name) ; // It wil give the error because obj2 is not an object it is simply a string so object2.Name is not supportable in the string it is the only function of object 
+
+        let obj3 = JSON.parse(obj2) ;// Now the main function of JSON.parse is to convert the string again into the object that is now obj3 is again act as an object now it is not a string 
+        console.log(obj3) ;
+        console.log(obj3.length) ; // Now it will generate the because obj3 is not a string now it is an object so obj3.length is not supportable in the object it is the property of string not an object .
+        console.log(obj3.Name) ; // Now it will give the name as thit is object 
+
+
+
+
+                      // Now go for the arrow function 
+
+     let add1 = function(num1 , num2 )
+     {
+        return num1 + num2 ;
+     }
+     console.log(add1(15,15)) ;
+
+    // It will simply add the two number 
+
+    let add2 = (num1 , num2) => num1 + num2 ;// Function with the two parameter 
+
+    console.log(add2(11,11)) ;
+
+    // This is the short cut key for the function denoted by the arrow ;
+
+    let square = a => a*a ; // Function with thwe one parameter 
+    console.log(square(6)) ;
+
+
+    </script>
+
+    
+</body>
+</html>
