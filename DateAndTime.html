@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date AN d Time in JS</title>
+</head>
+<body>
+
+    <h2>Date And Time in JS</h2>
+    <div id="mydate">Hello</div>
+
+    <script>
+
+        let date1 = new Date() ;
+        console.log(date1) ;
+
+        // new Date()  This will print current date and time
+
+        let date2 = new Date(2022,11,23,12,23,34,6000) ;   
+        console.log(date2) ;
+        // This is a format of printing date and time in the format of new Date(year,month,day,hrs,min,sec,ms) and the important point is to remember that months will be starts from 0 means 0 is assign to Jan and 11 is assigned to Dec
+
+        function displaydate()
+        {
+            let date3= new Date() ;
+            console.log(date3) ;
+        }
+
+        displaydate() ;
+
+       let date4 = document.getElementById("mydate").innerHTML = new Date() ;
+       console.log(date4) ;
+
+       // this will print the date and time in HTML page not in console because in this code we have changed innerHTML part of div tag so it will give the date and time in html part not in  console
+
+       let date5 = new Date();
+
+       console.log(date5.getFullYear());
+       console.log(date5.getUTCFullYear()) ;
+
+       console.log(date5.getMonth());
+       console.log(date5.getUTCMonth()) ;
+
+       console.log(date5.getDate());
+       console.log(date5.getUTCDate()) ;
+
+       console.log(date5.getDay);
+       console.log(date5.getUTCDay()) ;
+
+       console.log(date5.getHours());
+       console.log(date5.getUTCHours()) ;
+
+       console.log(date5.getMinutes);
+       console.log(date5.getUTCMinutes()) ;
+
+       console.log(date5.getSeconds);
+       console.log(date5.getUTCSeconds()) ;
+      
+
+    </script>
+    
+</body>
+</html>
