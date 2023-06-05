@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+
+    <h2> JSON</h2>
+    <ol>
+        <li>JSON Stands for JAvascript Object Orientation</li>
+        <li>JSON is used for exchanging of data over network or Internet</li>
+    </ol>
+
+    <script>
+           
+           const obj1 = {
+          
+            name: "Mohan",
+            age: 23 ,
+            Roll: 200123 ,
+            address : {
+                city: "Pratpgarh",
+                State : "UP" ,
+                Pin: 248758 
+
+            },
+            country: "India"
+
+
+           }
+
+           console.log(obj1) ; // This will simply print the Object
+           console.log(obj1.name); // this will print only name 
+           console.log(obj1.age) ;// This will print only age 
+           console.log(obj1.address.city) ; // This will print city from address
+
+           let s1 = JSON.stringify(obj1) ; // stringify will convert the object into the string
+           console.log(s1) ;  // s1 will print valid sring 
+           console.log(s1.length) ;// This will gives us length of string
+          // console.log(s1.address.city) ; // This will generate error because now s1 is string not an object
+
+           let s2 = JSON.parse(s1) ; // It will again convert the string into the object
+           console.log(s2) ; // Now S2 is object
+
+           console.log(s2.address.city) ; // It will give the city
+
+    </script>
+    
+</body>
+</html>
