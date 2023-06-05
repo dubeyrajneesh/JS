@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+
+    <h2> Arrow Function</h2>
+    <ol>
+        <li>Arrow Function is a short Cut for function</li>
+        <li>It ie easier way to denote a function by arrow</li>
+    </ol>
+
+    <script>
+        function add1(num1 , num2)
+        {
+            return num1+ num2 ;
+        }
+
+        console.log(add1(21,22)) ;
+
+        // This is old and one of the syntax to denote a function
+
+        const add2 = function(num1 , num2)
+        {
+            return num1 + num2 ;
+        }
+
+        console.log(add2(20,25)) ;
+
+        // This is another method of denoting a function
+
+        // Above written both the function does not use any array 
+
+                     // Arrow Function in JS
+
+        const add3 = (num1 , num2) =>
+        {
+                return num1+ num2 ;
+        } 
+        console.log(add3(15,15)) ;
+
+        // This is another way of denoting a function with the help of arrow
+
+        const add4 = (num1 , num2) => num1+num2 ;
+        console.log(add4(90,90)) ;
+
+        const square = num1 => num1*num1 ;
+        console.log(square(5)) ;
+    </script>
+    
+</body>
+</html>
