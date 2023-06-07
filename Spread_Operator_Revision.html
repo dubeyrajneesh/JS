@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <h2> Spread Operator</h2>
+    <p>Spread operator is used for adding the element </p>
+    <script>
+
+        const names = ["Rohan" , "Mohan" ,"Sohan"] ;
+        console.log(names) ;
+
+        // This array will simply prints the name of three person that is written inside the bracket. What will happen if I want to add the name of Mohit 
+
+        names.push = "Mohit" ;
+        console.log(names) ;
+
+        // Now Mohit will added in the list. But there is another operator which can also do the same work that is spread operator
+
+        console.log(...names , "Shyam") ; // Shyam will new member in this list
+        console.log(...names , "Ram" , "Shohan") ;
+
+        // So this was all about spread operator which is used for adding the element ...........
+
+        const array = [ obj1 ={
+
+            name: "Rinku" ,
+            age: 23 ,
+            Gender: "Male"
+        },
+
+         obj2 = {
+                
+            name: "Tinku",
+            age:21 ,
+            Gender: "Male"
+        }]
+
+        console.log(array) ;
+        console.log(...array , obj3 = {name: "Minku", age: 22 , gender: "Male"} ) ;
+    </script>
+</body>
+</html>
