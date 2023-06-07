@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <h2>Arrow Function</h2>
+    <p> Arrow Function is the shortcut key for writing the function . This is called the arrow function because it is denoted by arrow</p>
+
+    <script>
+
+        function add(num1 , num2 , num3)
+        {
+            const result = num1 + num2 + num3 ;
+            return result ;
+        }
+
+        console.log(add(12,13,14)) ;
+        // This is the l;ong method for denoting the function . We can simply add the 3 numbers by function in shortcut as
+
+        const add1 = (num1 , num2 , num3) => num1 + num2 + num3 ;
+        console.log(add1(12,12,12)) ;
+
+        // This is called arrow function which is denoted by the arrow 
+
+        const sqr = num1 => num1*num1 ;
+        console.log(sqr(12));
+        console.log(sqr(15));
+        console.log(sqr(19));
+    </script>
+</body>
+</html>
